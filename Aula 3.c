@@ -42,4 +42,6 @@ int main(){
     }else{
         printf("Baixo peso\n");
     }
+
+    return 0;
 }

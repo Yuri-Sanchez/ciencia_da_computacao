@@ -50,4 +50,6 @@ int main(){
     printf("Subtração. -> %d - %d = %d\n", A, B, subtr);
     printf("Multiplicação -> %d * %d = %d\n", A, B, mult);
     printf("Divisão. -> %d / %d = %.2f\n", A, B, divis);
+
+    return 0;
 }

@@ -39,4 +39,6 @@ int main(){
     }else{
         printf("Aluno menor de idade, necessita de um responsável financeiro.\n");
     }
+
+    return 0;
 }
