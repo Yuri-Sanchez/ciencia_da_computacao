@@ -28,19 +28,19 @@ int main(){
 
     printf("\n-----------------------------------------\n");
     
-    int l1, l2, l3;
-    printf("Parte 2\n");
-    printf("Digite o lado 1: \n");
-    scanf("%d", &l1);
-    printf("Digite o lado 2: \n");
-    scanf("%d", &l2);
-    printf("Digite o lado 3: \n");
-    scanf("%d", &l3);
+    
+     
+    float l[3];
 
-    if (l1 == l2 && l2 == l3)
-        printf("Triângulo equilátero");
-    else if (l1 == l2 || l2 == l3 || l1 == l3)
-        printf("Triângulo isósceles");
-    else
-        printf("Triângulo escaleno");
+    for (int i = 0; i <=2; i++){
+        printf("Digite o %d° lado do triangulo: \n", i + 1);
+        scanf("%f", &l[i]);
+    }
+
+    if (l[0] == l[1] && l[1] == l[2])
+    printf("Triângulo equilátero");
+else if (l[0] == l[1] || l[1] == l[2] || l[0] == l[2])
+    printf("Triângulo isósceles");
+else
+    printf("Triângulo escaleno");
 }
