@@ -11,6 +11,10 @@
 #include <stdio.h>
 #include <locale.h>
 
+float calcularIMC(float p, float a){
+    return p / (a * a);
+}
+
 int main(){
     setlocale(LC_ALL, "Portuguese_Brazil");
     float peso, altura, imc;
@@ -21,7 +25,7 @@ int main(){
     printf("Altura(metros): \n");
     scanf("%f", &altura);
 
-    imc = peso / (altura * altura);
+    imc = calcularIMC(peso, altura);
 
     printf("Seu índice de massa corporal(IMC) é: %.2f\n", imc);
 

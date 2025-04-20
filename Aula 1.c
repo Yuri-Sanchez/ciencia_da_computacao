@@ -3,6 +3,22 @@
 #include <stdio.h>
 #include <locale.h>
 
+float calcularSoma(float num1, float num2){
+    return (num1 + num2);
+}
+
+float calcularSub(float num1, float num2){
+    return (num1 - num2);
+}
+
+float calcularMult(float num1, float num2){
+    return (num1 * num2);
+}
+
+float calcularDiv(float num1, float num2){
+    return (num1 / num2);
+}
+
 int main(){
 
     setlocale(LC_ALL, "Portuguese_Brazil");
@@ -23,10 +39,10 @@ int main(){
     printf("Digite o segundo numero: \n");
     scanf("%d", &B);
 
-    soma = A + B;
-    subtr = A - B;
-    mult = A * B;
-    divis = (float)A / B;
+    soma = calcularSoma(A,B);
+    subtr = calcularSub(A,B);
+    mult = calcularMult(A,B);
+    divis = calcularDiv(A,B);
 
     /*Para o compilador precisar do resultado em ponto flutuante é necessário colocar (float) antes da variavél responsável pela divisão*/
 
